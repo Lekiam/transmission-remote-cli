@@ -18,10 +18,9 @@ Debian/Ubuntu package names are `python-adns` and `python-geoip`.
 ## Connection information
 Authentication and host/port can be set via command line with one
 of these patterns:  
-`$ transmission-remote-cli.py -c homeserver`  
-`$ transmission-remote-cli.py -c homeserver:1234`  
-`$ transmission-remote-cli.py -c johndoe:secretbirthday@homeserver`  
-`$ transmission-remote-cli.py -c johndoe:secretbirthday@homeserver:1234`  
+`$ transmission-remote-cli.py -c 192.168.0.199:9091`  
+`$ transmission-remote-cli.py -c 192.168.0.200:9091
+ 
 
 You can write this (and other) stuff into a configuration file:  
 `$ transmission-remote-cli.py -c johndoe:secretbirthday@homeserver:1234 --create-config`  
@@ -57,8 +56,7 @@ transmission-remote. This is useful because you can instruct Firefox to open
 torrent files with transmission-remote-cli.py.
 
 `$ transmission-remote-cli.py http://link/to/file.torrent`  
-`$ transmission-remote-cli.py path/to/some/torrent-file`
-
+`$ transmission-remote-cli.py /tmp/hdd/volumes/HDD1/transmissionDownload
 
 ## Contact
 Feel free to request new features or provide bug reports.  
